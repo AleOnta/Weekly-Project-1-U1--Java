@@ -10,4 +10,21 @@ public class File {
         this();
         title = fileTitle;
     }
+
+    public static String convert(int n, String ch) {
+        String converted = "";
+        for (int i = 0; i < n; i++) {
+            converted += ch;
+        }
+        return converted;
+    }
+
+    public static void convert(String title, int n, String ch) {
+        String converted = "";
+        for (int i = 0; i < n; i++) {
+            converted += ch;
+        }
+        System.out.println( title + " " + converted);
+    }
+
 }
