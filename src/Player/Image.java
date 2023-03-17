@@ -14,11 +14,7 @@ public class Image extends File implements Brightness, Show{
 
     @Override
     public void show() {
-        String convertedBrightness = "";
-    for (int i = 0; i < brightness; i++) {
-        convertedBrightness += "*";
-    }
-    System.out.println( title + " " + convertedBrightness);
+        File.convert(title, brightness, "*");
     }
 
     @Override
