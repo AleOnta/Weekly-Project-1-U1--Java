@@ -15,7 +15,7 @@ public class Audio extends File implements Play, Volume {
         volume = preferredVolume;
     }
 
-
+    // overriding Play interface method
     @Override
     public void play() {
         // super class static method that print in console the volume expressed in "!"
@@ -23,17 +23,23 @@ public class Audio extends File implements Play, Volume {
         int i = 0;
         while(i < length) {
             i++;
-            System.out.print("0" + i + ":00 - ");
+            if(i < 10) {
+                System.out.print("0" + i + ":00 - ");
+            } else {
+                System.out.print(i + ":00 - ");
+            }
             System.out.println(title + " volume: " + convertedVolume);
         }
         System.out.println("\n");
     }
 
+    // overriding Volume interface method
     @Override
     public void increaseVolume() {
         volume++;
     }
 
+    // overriding Volume interface method
     @Override
     public void decreaseVolume() {
         volume--;

@@ -12,22 +12,26 @@ public class Image extends File implements Brightness, Show{
         brightness = preferredBrightness;
     }
 
+    // overriding Show interface method
     @Override
     public void show() {
         File.convert(title, brightness, "*");
         System.out.println("\n");
     }
 
+    // overriding Brightness interface method
     @Override
     public void increaseBrightness() {
         brightness++;
     }
 
+    // overriding Brightness interface method
     @Override
     public void decreaseBrightness() {
         brightness--;
     }
 
+    // overriding toString method
     @Override
     public String toString() {
         return "Image{" +
