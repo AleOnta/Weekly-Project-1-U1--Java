@@ -23,7 +23,7 @@ public class Video extends File implements Play, Volume, Brightness {
             System.out.print("0" + i + ":00 - ");
             System.out.println(title + " volume: " + convertedVolume + ", brightness: " + convertedBrightness);
         }
-
+        System.out.println("\n");
     }
 
     @Override

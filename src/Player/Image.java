@@ -15,6 +15,7 @@ public class Image extends File implements Brightness, Show{
     @Override
     public void show() {
         File.convert(title, brightness, "*");
+        System.out.println("\n");
     }
 
     @Override
@@ -27,5 +28,11 @@ public class Image extends File implements Brightness, Show{
         brightness--;
     }
 
-
+    @Override
+    public String toString() {
+        return "Image{" +
+                "title= " + title + "; " +
+                "brightness= " + brightness +
+                '}';
+    }
 }
