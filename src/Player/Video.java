@@ -9,7 +9,8 @@ public class Video extends File implements Play, Volume, Brightness {
     public Video(String fileTitle, int videoLength) {
         super(fileTitle);
         length = videoLength;
-        System.out.println("type = Video");
+        System.out.println("type = Video |");
+        System.out.println("|-------------------------------| \n");
     }
 
     // overriding Play interface method

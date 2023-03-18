@@ -5,7 +5,8 @@ public class Image extends File implements Brightness, Show{
 
     public Image(String fileTitle) {
         super(fileTitle);
-        System.out.println("type = Image");
+        System.out.println("type = Image |");
+        System.out.println("|-------------------------------| \n");
     }
     public Image(String fileTitle, int preferredBrightness) {
         this(fileTitle);

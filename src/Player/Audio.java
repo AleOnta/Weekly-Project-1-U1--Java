@@ -7,7 +7,8 @@ public class Audio extends File implements Play, Volume {
     public Audio(String fileTitle, int audioLength) {
         super(fileTitle);
         length = audioLength;
-        System.out.println("type = Audio");
+        System.out.println("type = Audio |");
+        System.out.println("|-------------------------------| \n");
     }
 
     public Audio(String fileTitle,int audioLength, int preferredVolume) {
